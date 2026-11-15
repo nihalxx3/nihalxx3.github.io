@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nazmus Sakib Nihal — Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <span class="logo">NSN</span>
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#research">Research</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-content">
+          <span class="badge">Computer Science & Engineering</span>
+          <h1>Nazmus Sakib Nihal</h1>
+          <p class="hero-subtitle">
+            Graduating CSE student at North South University specializing in
+            deep learning, computer vision, speech synthesis, and
+            high-performance backend systems.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            <a
+              href="assets/CV-(NAZMUS_SAKIB_NIHAL).pdf"
+              target="_blank"
+              class="btn btn-secondary"
+              >Download CV</a
+            >
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <img
+            src="assets/profile.jpg"
+            alt="Nazmus Sakib Nihal"
+            class="profile-image"
+          />
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2>About</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am a computer science graduate with a strong foundation in deep
+              learning, multimodal vision models, automated systems, and
+              full-stack software development. My academic work includes
+              research in student engagement detection and image restoration
+              optimization, complemented by hands-on engineering in real-time
+              voice pipelines and open-source contributions.
+            </p>
+          </div>
+          <div class="skills-box">
+            <h3>Core Competencies</h3>
+            <ul>
+              <li>Python, Go, PHP, JavaScript</li>
+              <li>PyTorch, FastAPI, WebSockets</li>
+              <li>Computer Vision & VLM</li>
+              <li>Linux, Docker, Git, FFmpeg</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <h2>Professional Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-date">Aug 2024 - Aug 2025</span>
+            <h3>Senior Executive, Student Support & Community Manager</h3>
+            <span class="timeline-org">Phoenix Education</span>
+            <p>
+              Directed operations, admissions workflows via Google Workspace,
+              and continuous academic tracking for 45+ student batches. Designed
+              and maintained educational web platforms using WordPress and Tutor
+              LMS Pro.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">Apr 2025 - Aug 2025</span>
+            <h3>Undergraduate Marker & Teaching Assistant</h3>
+            <span class="timeline-org"
+              >North South University (Department of English & Modern
+              Languages)</span
+            >
+            <p>
+              Evaluated assignments and quiz scripts using standardized rubrics,
+              maintained confidential performance and attendance records, and
+              administered course workflows via Canvas LMS.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="section">
+        <h2>Research Experience</h2>
+        <div class="project-grid">
+          <div class="card">
+            <h3>
+              Adaptive Feature Fusion for Improving AirNet Image Restoration
+              Performance
+            </h3>
+            <span class="card-meta"
+              >Directed Research (CSE498R) | North South University</span
+            >
+            <p>
+              <strong>Abstract:</strong> Image restoration faces challenges when
+              handling unseen mixed degradations. This research proposes an
+              Adaptive Feature Fusion mechanism to dynamically combine features
+              based on input image characteristics, boosting restoration quality
+              without altering the main AirNet architecture. Evaluated on
+              benchmark datasets including BSD400, Urban100, and Rain100L[cite:
+              4, 9, 13].
+            </p>
+          </div>
+          <div class="card">
+            <h3>Multimodal Student Engagement Detection</h3>
+            <span class="card-meta"
+              >Undergraduate Thesis | North South University</span
+            >
+            <p>
+              <strong>Abstract:</strong> Researched student affective states on
+              the DAiSEE dataset using Vision-Language Models and deep learning,
+              extracting multimodal features to achieve 87.5% accuracy and
+              deploying an end-to-end real-time Google Meet Chrome extension via
+              a FastAPI backend[cite: 1, 2].
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Technical Projects</h2>
+        <div class="project-grid">
+          <div class="card">
+            <h3>Duplex Voice Conversation Pipeline (CSE465)</h3>
+            <p>
+              Engineered a full-duplex English-to-Bengali speech-to-speech
+              pipeline using a pruned SeamlessM4T-v2 model, streaming 16 kHz
+              audio via WebSockets to a FastAPI backend with instant barge-in
+              support[cite: 2].
+            </p>
+            <a
+              href="https://github.com/nihalxx3/Voice_clone_project_CSE465"
+              target="_blank"
+              class="card-link"
+              >View Repository &rarr;</a
+            >
+          </div>
+          <div class="card">
+            <h3>autobrr</h3>
+            <p>
+              Contributed to a high-performance Go-based automation engine for
+              torrents and Usenet supporting real-time IRC parsing, RSS
+              evaluation, and integrations with major download clients[cite: 2].
+            </p>
+            <a
+              href="https://github.com/nihalxx3/autobrr"
+              target="_blank"
+              class="card-link"
+              >View Repository &rarr;</a
+            >
+          </div>
+          <div class="card">
+            <h3>Google Meet Tracker</h3>
+            <p>
+              Built a Tampermonkey userscript to record and separate participant
+              streams during Google Meet sessions using the File System Access
+              API with automated name resolution and deduplication[cite: 2].
+            </p>
+            <a
+              href="https://github.com/nihalxx3/Google-Meet-Tracker"
+              target="_blank"
+              class="card-link"
+              >View Repository &rarr;</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <h2>Contact</h2>
+        <p>
+          Feel free to reach out for collaborations, research opportunities, or
+          software engineering discussions.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:nsakibnihal2003@gmail.com"
+            >nsakibnihal2003@gmail.com</a
+          >
+          <a href="https://github.com/nihalxx3" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/nazmus-sakib-nihal" target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Nazmus Sakib Nihal. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
