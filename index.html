@@ -15,9 +15,12 @@
   <body>
     <header class="site-header">
       <div class="container nav-container">
-        <span class="logo">NSN</span>
+        <span class="logo" onclick="switchPage('home')" style="cursor: pointer"
+          >NSN</span
+        >
         <nav class="nav-links">
           <a href="#" class="nav-link active" data-page="home">Home</a>
+          <a href="#" class="nav-link" data-page="experience">Experience</a>
           <a href="#" class="nav-link" data-page="research">Research</a>
           <a href="#" class="nav-link" data-page="projects">Projects</a>
           <a href="#" class="nav-link" data-page="cv">CV Viewer</a>
@@ -27,7 +30,6 @@
     </header>
 
     <main class="container">
-      <!-- HOME PAGE VIEW -->
       <section id="page-home" class="page-view active">
         <div class="hero">
           <div class="hero-content">
@@ -73,56 +75,127 @@
               <h3>Core Competencies</h3>
               <ul>
                 <li>Python, Go, PHP, JavaScript</li>
-                <li>PyTorch, FastAPI, WebSockets</li>
+                <li>Artificial Intelligence, Machine Learning</li>
                 <li>Computer Vision & VLM</li>
-                <li>Linux, Docker, Git, FFmpeg</li>
+                <li>Google Workspace, Microsoft Office</li>
               </ul>
-            </div>
-          </div>
-        </section>
-
-        <section class="section">
-          <h2>Professional Experience</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <span class="timeline-date">Aug 2024 - Aug 2025</span>
-              <h3>Senior Executive, Student Support & Community Manager</h3>
-              <span class="timeline-org">Phoenix Education</span>
-              <p>
-                Directed operations, admissions workflows via Google Workspace,
-                and continuous academic tracking for 45+ student batches.
-                Designed and maintained educational web platforms using
-                WordPress and Tutor LMS Pro.
-              </p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Dec 2022 - Jul 2024</span>
-              <h3>Junior Executive, Student Support</h3>
-              <span class="timeline-org">Phoenix Education</span>
-              <p>
-                Managed student support ticketing, assisted in admissions
-                operations, and coordinated administrative documentation across
-                online learning cohorts.
-              </p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Apr 2025 - Aug 2025</span>
-              <h3>Undergraduate Marker & Teaching Assistant</h3>
-              <span class="timeline-org"
-                >North South University (Department of English & Modern
-                Languages)</span
-              >
-              <p>
-                Evaluated assignments and quiz scripts using standardized
-                rubrics, maintained confidential performance and attendance
-                records, and administered course workflows via Canvas LMS.
-              </p>
             </div>
           </div>
         </section>
       </section>
 
-      <!-- RESEARCH PAGE VIEW -->
+      <section id="page-experience" class="page-view">
+        <div class="page-header">
+          <h2>Professional Experience</h2>
+          <p class="hero-subtitle">
+            Operations management, educational platform engineering, and
+            academic teaching assistance.
+          </p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <span class="timeline-date">Aug 2024 - Aug 2025</span>
+                <h3>Senior Executive, Student Support & Community Manager</h3>
+                <a
+                  href="https://phoenixedu.com.bd/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="timeline-org"
+                  >Phoenix Education</a
+                >
+              </div>
+              <a
+                href="https://phoenixedu.com.bd/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="exp-logo-link"
+              >
+                <img
+                  src="assets/phoenix_header_logo.avif"
+                  alt="Phoenix Education"
+                  class="exp-logo"
+                />
+              </a>
+            </div>
+            <p>
+              Directed operations, admissions workflows via Google Workspace,
+              and continuous academic tracking for 45+ student batches. Designed
+              and maintained educational web platforms using WordPress and Tutor
+              LMS Pro.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <span class="timeline-date">Dec 2022 - Jul 2024</span>
+                <h3>Junior Executive, Student Support</h3>
+                <a
+                  href="https://phoenixedu.com.bd/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="timeline-org"
+                  >Phoenix Education</a
+                >
+              </div>
+              <a
+                href="https://phoenixedu.com.bd/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="exp-logo-link"
+              >
+                <img
+                  src="assets/phoenix_header_logo.avif"
+                  alt="Phoenix Education"
+                  class="exp-logo"
+                />
+              </a>
+            </div>
+            <p>
+              Managed student support ticketing, assisted in admissions
+              operations, and coordinated administrative documentation across
+              online learning cohorts.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <span class="timeline-date">Apr 2025 - Aug 2025</span>
+                <h3>Undergraduate Marker & Teaching Assistant</h3>
+                <a
+                  href="https://www.northsouth.edu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="timeline-org"
+                  >North South University (Department of English & Modern
+                  Languages)</a
+                >
+              </div>
+              <a
+                href="https://www.northsouth.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="exp-logo-link"
+              >
+                <img
+                  src="assets/nsu_logo.png"
+                  alt="North South University"
+                  class="exp-logo"
+                />
+              </a>
+            </div>
+            <p>
+              Evaluated assignments and quiz scripts using standardized rubrics,
+              maintained confidential performance and attendance records, and
+              administered course workflows via Canvas LMS.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="page-research" class="page-view">
         <div class="page-header">
           <h2>Research Experience & Publications</h2>
@@ -188,7 +261,6 @@
         </div>
       </section>
 
-      <!-- PROJECTS PAGE VIEW -->
       <section id="page-projects" class="page-view">
         <div class="page-header">
           <h2>Technical Projects & Open Source</h2>
@@ -257,21 +329,20 @@
         </div>
       </section>
 
-      <!-- CV VIEWER PAGE -->
       <section id="page-cv" class="page-view">
         <div class="page-header">
           <h2>Curriculum Vitae</h2>
           <p class="hero-subtitle">
             View online or download the official CV PDF.
           </p>
-          <div class="hero-actions" style="margin-top: 1.5rem">
+          <!-- <div class="hero-actions" style="margin-top: 1.5rem">
             <a
               href="assets/CV-(NAZMUS_SAKIB_NIHAL).pdf"
-              download="CV-(NAZMUS_SAKIB_NIHAL).pdf"
+              download="CV_Nazmus_Sakib_Nihal.pdf"
               class="btn btn-primary"
-              >Download CV PDF</a
+              ><center>Download CV PDF</center></a
             >
-          </div>
+          </div> -->
         </div>
         <div class="cv-viewer-container">
           <iframe
@@ -287,7 +358,6 @@
         </div>
       </section>
 
-      <!-- CONTACT PAGE VIEW -->
       <section id="page-contact" class="page-view">
         <div class="contact-section">
           <h2>Contact</h2>
