@@ -1,68 +1,57 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nazmus Sakib Nihal — Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="site-header">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio — Nazmus Sakib Nihal</title>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header">
       <div class="container nav-container">
-        <span class="logo" onclick="switchPage('home')" style="cursor: pointer"
-          >NSN</span
-        >
-        <nav class="nav-links">
-          <a href="#" class="nav-link active" data-page="home">Home</a>
-          <a href="#" class="nav-link" data-page="experience">Experience</a>
-          <a href="#" class="nav-link" data-page="research">Research</a>
-          <a href="#" class="nav-link" data-page="projects">Projects</a>
-          <a href="#" class="nav-link" data-page="cv">CV Viewer</a>
-          <a href="#contact" class="nav-link" data-page="contact">Contact</a>
+        <a class="logo" href="index.html" aria-label="NSN — Home">NSN</a>
+        <button class="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu">
+          <span class="nav-toggle-line"></span><span class="nav-toggle-line"></span><span class="nav-toggle-line"></span>
+        </button>
+        <nav class="nav-links" id="primary-navigation" aria-label="Main navigation">
+          <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+<a href="education.html" class="nav-link">Education</a>
+<a href="experience.html" class="nav-link">Experience</a>
+<a href="research.html" class="nav-link">Research</a>
+<a href="projects.html" class="nav-link">Projects</a>
+<a href="cv.html" class="nav-link">CV Viewer</a>
+<a href="contact.html" class="nav-link">Contact</a>
         </nav>
       </div>
     </header>
-
-    <main class="container">
-      <section id="page-home" class="page-view active">
-        <div class="hero">
-          <div class="hero-content">
-            <span class="badge">Computer Science & Engineering</span>
-            <h1>Nazmus Sakib Nihal</h1>
-            <p class="hero-subtitle">
-              Graduating CSE student at North South University specializing in
-              deep learning, computer vision, speech synthesis, and
-              high-performance backend systems.
-            </p>
-            <div class="hero-actions">
-              <button class="btn btn-primary" onclick="switchPage('contact')">
+<main class="container" id="main-content">
+<section class="page-view active" id="page-home">
+<div class="hero">
+<div class="hero-content">
+<span class="badge">Computer Science &amp; Engineering</span>
+<h1>Nazmus Sakib Nihal</h1>
+<p class="hero-subtitle">Computer Science and Engineering graduate with research experience in multimodal AI, computer vision, information retrieval, and speech processing.</p>
+<div class="hero-actions">
+<a class="btn btn-primary" href="contact.html">
                 Get in Touch
-              </button>
-              <button class="btn btn-secondary" onclick="switchPage('cv')">
+              </a>
+<a class="btn btn-secondary" href="cv.html">
                 View / Download CV
-              </button>
-            </div>
-          </div>
-          <div class="hero-image-wrapper">
-            <img
-              src="assets/profile.jpg"
-              alt="Nazmus Sakib Nihal"
-              class="profile-image"
-            />
-          </div>
-        </div>
-
-        <section class="section">
-          <h2>About</h2>
-          <div class="about-grid">
-            <div class="about-text">
-              <p>
+              </a>
+</div>
+</div>
+<div class="hero-image-wrapper">
+<img alt="Nazmus Sakib Nihal" class="profile-image" src="assets/profile.jpg"/>
+</div>
+</div>
+<section class="section">
+<h2>About</h2>
+<div class="about-grid">
+<div class="about-text">
+<p>
                 I am a computer science graduate with a strong foundation in
                 deep learning, multimodal vision models, automated systems, and
                 full-stack software development. My academic work includes
@@ -70,372 +59,25 @@
                 optimization, complemented by hands-on engineering in real-time
                 voice pipelines and open-source contributions.
               </p>
-            </div>
-            <div class="skills-box">
-              <h3>Core Competencies</h3>
-              <ul>
-                <li>Python, Go, PHP, JavaScript</li>
-                <li>Artificial Intelligence, Machine Learning</li>
-                <li>Computer Vision & VLM</li>
-                <li>Google Workspace, Microsoft Office</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </section>
-
-      <section id="page-experience" class="page-view">
-        <div class="page-header">
-          <h2>Professional Experience</h2>
-          <p class="hero-subtitle">
-            Operations management, educational platform engineering, and
-            academic teaching assistance.
-          </p>
-        </div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="exp-header">
-              <div class="exp-title-group">
-                <span class="timeline-date">Aug 2024 - Aug 2025</span>
-                <h3>Senior Executive, Student Support & Community Manager</h3>
-                <a
-                  href="https://phoenixedu.com.bd/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="timeline-org"
-                  >Phoenix Education</a
-                >
-              </div>
-              <a
-                href="https://phoenixedu.com.bd/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="exp-logo-link"
-              >
-                <img
-                  src="assets/phoenix_header_logo.avif"
-                  alt="Phoenix Education"
-                  class="exp-logo"
-                />
-              </a>
-            </div>
-            <p>
-              Directed operations, admissions workflows via Google Workspace,
-              and continuous academic tracking for 45+ student batches. Designed
-              and maintained educational web platforms using WordPress and Tutor
-              LMS Pro.
-            </p>
-          </div>
-
-          <div class="timeline-item">
-            <div class="exp-header">
-              <div class="exp-title-group">
-                <span class="timeline-date">Dec 2022 - Jul 2024</span>
-                <h3>Junior Executive, Student Support</h3>
-                <a
-                  href="https://phoenixedu.com.bd/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="timeline-org"
-                  >Phoenix Education</a
-                >
-              </div>
-              <a
-                href="https://phoenixedu.com.bd/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="exp-logo-link"
-              >
-                <img
-                  src="assets/phoenix_header_logo.avif"
-                  alt="Phoenix Education"
-                  class="exp-logo"
-                />
-              </a>
-            </div>
-            <p>
-              Managed student support ticketing, assisted in admissions
-              operations, and coordinated administrative documentation across
-              online learning cohorts.
-            </p>
-          </div>
-
-          <div class="timeline-item">
-            <div class="exp-header">
-              <div class="exp-title-group">
-                <span class="timeline-date">Apr 2025 - Aug 2025</span>
-                <h3>Undergraduate Marker & Teaching Assistant</h3>
-                <a
-                  href="https://www.northsouth.edu/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="timeline-org"
-                  >North South University (Department of English & Modern
-                  Languages)</a
-                >
-              </div>
-              <a
-                href="https://www.northsouth.edu/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="exp-logo-link"
-              >
-                <img
-                  src="assets/nsu_logo.png"
-                  alt="North South University"
-                  class="exp-logo"
-                />
-              </a>
-            </div>
-            <p>
-              Evaluated assignments and quiz scripts using standardized rubrics,
-              maintained confidential performance and attendance records, and
-              administered course workflows via Canvas LMS.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="page-research" class="page-view">
-        <div class="page-header">
-          <h2>Research Experience & Publications</h2>
-          <p class="hero-subtitle">
-            Academic research projects exploring multimodal vision models, image
-            restoration, and affective computing.
-          </p>
-        </div>
-        <div class="project-grid">
-          <div class="card">
-            <h3>
-              Adaptive Feature Fusion for Improving AirNet Image Restoration
-              Performance
-            </h3>
-            <span class="card-meta"
-              >Directed Research (CSE498R) | North South University</span
-            >
-            <p>
-              <strong>Abstract:</strong> Image restoration faces challenges when
-              handling unseen mixed degradations. This research proposes an
-              Adaptive Feature Fusion mechanism to dynamically combine features
-              based on input image characteristics, boosting restoration quality
-              without altering the main AirNet architecture. Evaluated on
-              benchmark datasets including BSD400, Urban100, and Rain100L.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Multimodal Student Engagement Detection</h3>
-            <span class="card-meta"
-              >Undergraduate Thesis | North South University</span
-            >
-            <p>
-              <strong>Abstract:</strong> Researched student affective states on
-              the DAiSEE dataset using Vision-Language Models and deep learning,
-              extracting multimodal features to achieve high accuracy and
-              deploying an end-to-end real-time Google Meet Chrome extension via
-              a FastAPI backend.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Full-Duplex Speech-to-Speech Translation Pipeline</h3>
-            <span class="card-meta"
-              >CSE465 Project | North South University</span
-            >
-            <p>
-              <strong>Abstract:</strong> Developed a full-duplex
-              English-to-Bengali speech-to-speech translation pipeline combining
-              pruned DoRA-merged SeamlessM4T v2 models with PyTorch Continuous
-              Integrate-and-Fire boundary adapters for low-latency WebSocket
-              streaming.
-            </p>
-          </div>
-          <div class="card">
-            <h3>CAPTCHA Solver & Automation Systems</h3>
-            <span class="card-meta">Applied Systems Research</span>
-            <p>
-              <strong>Abstract:</strong> Developed open-source PyTorch CNN
-              models and browser extension integrations for automated
-              verification and portal processing on university academic
-              platforms.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="page-projects" class="page-view">
-        <div class="page-header">
-          <h2>Technical Projects & Open Source</h2>
-          <p class="hero-subtitle">
-            Selected repositories, automation tools, and full-stack systems.
-          </p>
-        </div>
-        <div class="project-grid">
-          <div class="card">
-            <h3>Duplex Voice Conversation Pipeline</h3>
-            <p>
-              Engineered a full-duplex English-to-Bengali speech-to-speech
-              pipeline using a pruned SeamlessM4T-v2 model, streaming 16 kHz
-              audio via WebSockets to a FastAPI backend with instant barge-in
-              support.
-            </p>
-            <a
-              href="https://github.com/nihalxx3/Voice_clone_project_CSE465"
-              target="_blank"
-              class="card-link"
-              >View Repository &rarr;</a
-            >
-          </div>
-          <div class="card">
-            <h3>autobrr</h3>
-            <p>
-              Contributed to a high-performance Go-based automation engine for
-              torrents and Usenet supporting real-time IRC parsing, RSS
-              evaluation, and integrations with major download clients.
-            </p>
-            <a
-              href="https://github.com/nihalxx3/autobrr"
-              target="_blank"
-              class="card-link"
-              >View Repository &rarr;</a
-            >
-          </div>
-          <div class="card">
-            <h3>Google Meet Tracker</h3>
-            <p>
-              Built a Tampermonkey userscript to record and separate participant
-              streams during Google Meet sessions using the File System Access
-              API with automated name resolution and deduplication.
-            </p>
-            <a
-              href="https://github.com/nihalxx3/Google-Meet-Tracker"
-              target="_blank"
-              class="card-link"
-              >View Repository &rarr;</a
-            >
-          </div>
-          <div class="card">
-            <h3>VSView-Screenshot-Comparison</h3>
-            <p>
-              Published open-source VapourSynth frame matching tool featuring
-              Cython build isolation fixes and automated slow.pics API
-              integration for media comparison.
-            </p>
-            <a
-              href="https://github.com/nihalxx3/VSView-Screenshot-Comparison"
-              target="_blank"
-              class="card-link"
-              >View Repository &rarr;</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <section id="page-cv" class="page-view">
-        <div class="page-header">
-          <h2>Curriculum Vitae</h2>
-          <p class="hero-subtitle">
-            View online or download the official CV PDF.
-          </p>
-          <!-- <div class="hero-actions" style="margin-top: 1.5rem">
-            <a
-              href="assets/NAZMUS-SAKIB-NIHAL(CV).pdf"
-              download="CV_Nazmus_Sakib_Nihal.pdf"
-              class="btn btn-primary"
-              ><center>Download CV PDF</center></a
-            >
-          </div> -->
-        </div>
-        <div class="cv-viewer-container">
-          <iframe
-            src="assets/NAZMUS-SAKIB-NIHAL(CV).pdf"
-            class="cv-iframe"
-            title="CV Viewer"
-          >
-            <p>
-              Your browser does not support PDFs.
-              <a href="assets/NAZMUS-SAKIB-NIHAL(CV).pdf">Download the PDF</a>.
-            </p>
-          </iframe>
-        </div>
-      </section>
-
-      <section id="page-contact" class="page-view">
-        <div class="contact-section">
-          <h2>Contact</h2>
-          <p>
-            Feel free to reach out for collaborations, research opportunities,
-            or software engineering discussions.
-          </p>
-
-          <div class="contact-links">
-            <!-- Email -->
-            <a href="mailto:nazmus.nihal@northsouth.edu">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <rect x="3" y="5" width="18" height="14" rx="2" />
-                <path d="m3 7 9 6 9-6" />
-              </svg>
-              <span>nazmus.nihal@northsouth.edu</span>
-            </a>
-
-            <!-- GitHub -->
-            <a
-              href="https://github.com/nihalxx3"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.1c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 1.71 2.63 1.22 3.27.93.1-.72.39-1.22.71-1.5-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.21 1.15-2.99-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.44 3.05-1.14 3.05-1.14.61 1.53.23 2.67.11 2.95.72.78 1.15 1.77 1.15 2.99 0 4.29-2.62 5.24-5.11 5.51.4.35.76 1.03.76 2.08v3.08c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"
-                />
-              </svg>
-              <span>GitHub</span>
-            </a>
-
-            <!-- LinkedIn -->
-            <a
-              href="https://linkedin.com/in/nazmus-sakib-nihal"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.31 2 20.45 2ZM7.93 18.46H4.95V9.03h2.98v9.43ZM6.44 7.74a1.73 1.73 0 1 1 0-3.46 1.73 1.73 0 0 1 0 3.46Zm12.02 10.72h-2.98v-4.59c0-1.09-.02-2.49-1.52-2.49-1.52 0-1.75 1.18-1.75 2.41v4.67H9.23V9.03h2.86v1.29h.04c.4-.75 1.37-1.53 2.82-1.53 3.02 0 3.58 1.99 3.58 4.57v5.1Z"
-                />
-              </svg>
-              <span>LinkedIn</span>
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <p>&copy; 2026 Nazmus Sakib Nihal. All rights reserved.</p>
-      </div>
-    </footer>
-
-    <script src="js/script.js"></script>
-  </body>
+</div>
+<div class="skills-box">
+<h3>Core Competencies</h3>
+<ul>
+<li>Python, Go, PHP, JavaScript</li>
+<li>Artificial Intelligence, Machine Learning</li>
+<li>Computer Vision &amp; VLM</li>
+<li>Google Workspace, Microsoft Office</li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<p>© 2026 Nazmus Sakib Nihal. All rights reserved.</p>
+</div>
+</footer>
+<script src="js/script.js" defer></script>
+</body>
 </html>

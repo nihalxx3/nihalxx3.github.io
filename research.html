@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Research — Nazmus Sakib Nihal</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="logo" href="index.html" aria-label="NSN — Home">NSN</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+        >
+          <span class="nav-toggle-line"></span
+          ><span class="nav-toggle-line"></span
+          ><span class="nav-toggle-line"></span>
+        </button>
+        <nav
+          class="nav-links"
+          id="primary-navigation"
+          aria-label="Main navigation"
+        >
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="education.html" class="nav-link">Education</a>
+          <a href="experience.html" class="nav-link">Experience</a>
+          <a href="research.html" class="nav-link active" aria-current="page"
+            >Research</a
+          >
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="cv.html" class="nav-link">CV Viewer</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container" id="main-content">
+      <section class="page-view active" id="page-research">
+        <div class="page-header">
+          <h2>Undergraduate Research Experience</h2>
+          <p class="hero-subtitle">
+            Research in multimodal learning, speech processing, document
+            retrieval, and image restoration.
+          </p>
+        </div>
+        <!-- Working titles from the CV. Replace these with final research-paper titles when available. -->
+        <div class="project-grid research-grid">
+          <article class="card research-card">
+            <div class="research-title-row">
+              <h3>
+                Adaptive Multimodal Student Engagement Detection in Online
+                Learning Environments Using Deep Learning and Vision Language
+                Models on the DAiSEE Dataset
+              </h3>
+              <a
+                href="assets/CSE499_Report.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-link research-paper-link"
+              >
+                View Paper &nearr;
+              </a>
+            </div>
+            <span class="card-meta">CSE499 · Undergraduate Thesis, 2026</span>
+            <p class="research-supervisor">Supervised by Dr. Nabeel Mohammed</p>
+            <p class="research-preview">
+              Investigated engagement, boredom, confusion, and frustration on
+              the DAiSEE video dataset using behavioral and multimodal models.
+            </p>
+            <details class="research-details">
+              <summary>See more</summary>
+              <div class="research-full">
+                <p class="research-detail-label">Abstract</p>
+                <p>
+                  Knowing how students feel in online classes is important but
+                  hard. In a real classroom a teacher can watch the students and
+                  see who is bored, confused, or not paying attention. In an
+                  online class this feedback is mostly lost. In this work we
+                  studied four student states from the DAiSEE dataset:
+                  engagement, boredom, confusion, and frustration. Each state
+                  has four levels, from very low to very high, and the data is
+                  very imbalanced, which makes the task difficult. We did not
+                  commit to one method early. Instead we ran several parallel
+                  lines of work and compared them. First we took multiple frames
+                  from each short video and found the face. Then we described
+                  each video in three ways: interpretable facial features from
+                  OpenFace and MediaPipe, deep visual features from image and
+                  video models, and short text descriptions from vision language
+                  models. On top of these we tested more complex methodologies
+                  such as classical machine learning, ensembles, a leakage free
+                  cross state cascade, deep spatio temporal models such as
+                  EfficientNet and EfficientFormer with a BiGRU, and fine tuned
+                  vision language models like Gemma. We also built a synthetic
+                  data pipeline to fight the class imbalance. Our best pixel
+                  based model reached 87.5 percent test accuracy with balanced
+                  performance across all four levels, while the cascade model
+                  reached about 66.8 percent average accuracy across the four
+                  states using only facial features. Finally, we built a Chrome
+                  extension with a FastAPI backend that runs on Google Meet, to
+                  show how the detector could work in a real online class.
+                </p>
+              </div>
+            </details>
+          </article>
+          <article class="card research-card">
+            <div class="research-title-row">
+              <h3>
+                Multilingual Speech-to-Speech Duplex Voice Translation: Layer
+                Pruning and Knowledge Distillation over Large S2S Translation
+                Models to Tiny On-Device Model with Duplex Voice Translation
+                support
+              </h3>
+
+              <a
+                href="assets/CSE465_Report.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-link research-paper-link"
+              >
+                View Paper &nearr;
+              </a>
+            </div>
+            <span class="card-meta">CSE465 · Spring 2026</span>
+            <p class="research-supervisor">Supervised by Dr. Nabeel Mohammed</p>
+            <p class="research-preview">
+              Studied model compression for speech-to-speech translation and
+              developed a duplex browser application with streaming audio.
+            </p>
+            <details class="research-details">
+              <summary>See more</summary>
+              <div class="research-full">
+                <p class="research-detail-label">Abstract</p>
+                <p>
+                  This project studies practical compression of Meta’s
+                  SeamlessM4T v2 Large speech-to-speech translation model for
+                  lower-resource multilingual deployment. SeamlessM4T v2 Large
+                  is a powerful multilingual speech translation system, but the
+                  speech-to-speech variant used in this project has
+                  approximately 1.805B parameters and multiple coupled
+                  components: a speech encoder, text decoder, text-to-unit (T2U)
+                  model, and vocoder. The project goal was to reduce parameter
+                  count and inference cost while preserving usable speech
+                  translation quality for English, Bengali, Mandarin, Arabic,
+                  and Hindi. The final approach combines language-scoped
+                  vocabulary pruning, Block-Influenceguided depth pruning,
+                  conservative T2U layer merging, text decoder pruning,
+                  checkpointed recovery fine-tuning, sparse top-k
+                  teacher-student knowledge distillation, and LoRA/DoRA-style
+                  adapter recovery. The final selected multilingual model has
+                  approximately 1.0879B parameters, a 39.7 percent reduction
+                  from the baseline. On the saved eight-direction multilingual
+                  ASR benchmark, it achieves 33.73 ChrF, 8.16 BLEU, and 0.1336
+                  real-time factor (RTF), compared with the 1.8055B baseline’s
+                  46.49 ChrF, 15.88 BLEU, and 0.2455 RTF. This gives a 1.84x RTF
+                  speedup and makes the model practical on a local RTX 3050
+                  Laptop GPU with 4.3 GB VRAM.
+                </p>
+              </div>
+            </details>
+          </article>
+          <article class="card research-card">
+            <div class="research-title-row">
+              <h3>
+                LiCoR: Lightweight Contextual Retrieval with Dual-Model Late
+                Interaction
+              </h3>
+
+              <a
+                href="assets/CSE468_Report.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-link research-paper-link"
+              >
+                View Paper &nearr;
+              </a>
+            </div>
+            <span class="card-meta">CSE468 · Fall 2025</span>
+            <p class="research-supervisor">
+              Supervised by Dr. Md Adnan Arefeen
+            </p>
+            <p class="research-preview">
+              Investigated document retrieval using visual patch embeddings,
+              OCR-derived features, and late-interaction scoring.
+            </p>
+            <details class="research-details">
+              <summary>See more</summary>
+              <div class="research-full">
+                <p class="research-detail-label">Abstract</p>
+                <p>
+                  Recent Vision-Language Models (VLMs) such as ColPali (Faysse
+                  et al., 2024) have caused significant advancement in
+                  visually-rich document retrieval by processing documents
+                  directly as images. However, their large-scale architectures
+                  demand substantial computational resources often exceeding 24
+                  GB of VRAM for training, making them inaccessible to
+                  researchers and practitioners using consumer-grade hardware.
+                  To overcome this accessibility gap, we present LiCoR
+                  (Lightweight Contextual Retrieval), a dual-modal late
+                  interaction architecture designed for efficient and
+                  high-performance document retrieval on a single 16 GB GPU
+                  (e.g., NVIDIA RTX 5060 Ti). LiCoR decouples costly feature
+                  extraction from training through an optimized offline
+                  pipeline. It combines SigLIP-derived visual patch embeddings
+                  (Zhai et al., 2023a) with PaddleOCR-extracted textual
+                  representations (Du et al., 2020), then aligns them in a
+                  shared latent space using lightweight projection layers. A
+                  learnable fusion gate dynamically balances visual structure
+                  and textual semantics, while a MaxSim-based late interaction
+                  mechanism enables fine-grained, token-topatch matching without
+                  compromising inference speed. Empirical evaluations on the
+                  ViDoRe benchmark (Faysse et al., 2024) demonstrate that LiCoR
+                  achieves competitive performance notably 37.25 nDCG@5 on
+                  TatQA; while being 3.75× faster to train than ColPali and
+                  fitting entirely within 16 GB of VRAM. Our approach
+                  demonstrates that effective retrieval is attainable without
+                  high-end infrastructure. We release our code, pre-computed
+                  pipelines, and automated benchmarking system under an open
+                  license at GitHub.
+                </p>
+              </div>
+            </details>
+          </article>
+          <article class="card research-card">
+            <div class="research-title-row">
+              <h3>
+                Adaptive Feature Fusion for Improving AirNet Image Restoration
+                Performance
+              </h3>
+
+              <a
+                href="assets/CSE498R_Report.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-link research-paper-link"
+              >
+                View Paper &nearr;
+              </a>
+            </div>
+            <span class="card-meta"
+              >CSE498R · Directed Research, Summer 2026</span
+            >
+            <p class="research-supervisor">Supervised by Dr. Shafin Rahman</p>
+            <p class="research-preview">
+              Explored degradation-aware feature fusion for all-in-one image
+              restoration using a reproducible AirNet evaluation environment.
+            </p>
+            <details class="research-details">
+              <summary>See more</summary>
+              <div class="research-full">
+                <p class="research-detail-label">Abstract</p>
+                <p>
+                  Image restoration is honestly a core problem in computer
+                  vision since real world photos get messed up by noise, rain,
+                  haze, or a mix of everything. We are working with ”AirNet, an
+                  all-in-one framework for image restoration” , but recent
+                  papers show it’s feature fusion really struggles with weird,
+                  unseen mixed degradations. For our directed research, we are
+                  proposing an Adaptive Feature Fusion mechanism to dynamically
+                  combine features based on the image itself, hoping to boost
+                  restoration quality without changing AirNet’s main
+                  architecture. We spent a lot of time reviewing research papers
+                  and existing works in similar field like PromptIR and CoDe to
+                  pinpoint the exact research gap before diving into the code.
+                  The implementation side was pretty rough as we had to
+                  reproduce the offical AirNet repo using Docker, Ubuntu, and
+                  WSL2, and matching the PyTorch, CUDA, and MMCV environments
+                  took huge moment. We also had to reorganize the deraining
+                  dataset, download the RESIDE dehazing data, and do a ton of
+                  debugging just to fix annoying path issues in their data
+                  pipeline. Right now, the setup has been completed including
+                  baseline analysis. Our described work explains to integrate my
+                  new adaptive module, train it, and compare the PSNR and SSIM
+                  metrics to see if it actually beats the original. Full project
+                  source codes including training ipynb notebook files with
+                  proper outputs are available at:
+                  https://github.com/nihalxx3/CSE498R_Adaptive_AirNet
+                </p>
+              </div>
+            </details>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Nazmus Sakib Nihal. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
